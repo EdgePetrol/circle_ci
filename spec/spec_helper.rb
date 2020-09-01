@@ -2,20 +2,18 @@
 
 require 'pathname'
 ROOT = Pathname.new(File.expand_path('..', __dir__))
-$:.unshift((ROOT + 'lib').to_s)
-$:.unshift((ROOT + 'spec').to_s)
+$:.unshift("#{ROOT}lib")
+$:.unshift("#{ROOT}spec")
 
 require 'bundler/setup'
 
 require 'rspec'
 
 require 'simplecov'
-require 'simplecov-json'
 
 SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new(
   [
-    SimpleCov::Formatter::HTMLFormatter,
-    SimpleCov::Formatter::JSONFormatter
+    SimpleCov::Formatter::HTMLFormatter
   ]
 )
 SimpleCov.start do

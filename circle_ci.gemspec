@@ -4,7 +4,7 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = 'circle_ci'
+  spec.name          = 'circle_ci_wrapper'
   spec.version       = '0.0.1'
   spec.authors       = ['Guilherme Pereira']
   spec.email         = ['guilhermepereira@edgepetrol.com']
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
   spec.required_ruby_version = '>= 2.4.0'
 
-  spec.files       = ['lib/circle_ci.rb']
+  spec.files         = ['lib/circle_ci_wrapper.rb']
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
@@ -24,7 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 12.3'
   spec.add_development_dependency 'rspec', '~> 3.4'
   spec.add_development_dependency 'rubocop', '~> 0.90'
+  spec.add_development_dependency 'simplecov', '~> 0.19'
   spec.add_development_dependency 'yard', '~> 0.9'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'simplecov-json'
 end
