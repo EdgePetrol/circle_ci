@@ -2,10 +2,11 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'circle_ci_wrapper/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'circle_ci_wrapper'
-  spec.version       = '0.0.1'
+  spec.version       = CircleCiWrapper::VERSION
   spec.authors       = ['Guilherme Pereira']
   spec.email         = ['guilhermepereira@edgepetrol.com']
   spec.description   = %(CircleCI API wrapper)
@@ -23,7 +24,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry', '~> 0.13'
   spec.add_development_dependency 'rake', '~> 12.3'
   spec.add_development_dependency 'rspec', '~> 3.4'
-  spec.add_development_dependency 'rubocop', '~> 0.90'
-  spec.add_development_dependency 'simplecov', '~> 0.19'
-  spec.add_development_dependency 'yard', '~> 0.9'
+  spec.add_development_dependency 'rubocop', '~> 0.85.1'
+  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'simplecov-json'
+  spec.add_development_dependency 'simplecov-shield-json'
 end

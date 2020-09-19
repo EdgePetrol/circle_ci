@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'net/http'
+require_relative 'circle_ci_wrapper/version'
 
 # Wrapper around circle ci api
 class CircleCiWrapper
