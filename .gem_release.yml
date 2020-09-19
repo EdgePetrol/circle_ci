@@ -1,0 +1,2 @@
+bump:
+  file: lib/circle_ci_wrapper/version.rb
