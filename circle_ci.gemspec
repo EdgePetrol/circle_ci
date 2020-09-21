@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.85.1'
   spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'simplecov-json'
-  spec.add_development_dependency 'simplecov-shield-json'
+  spec.add_development_dependency 'simplecov-shield-json', '~> 1.0.0'
 end
