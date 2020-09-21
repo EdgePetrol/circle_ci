@@ -1,5 +1,5 @@
 [![EdgePetrol](https://circleci.com/gh/EdgePetrol/circle_ci.svg?style=shield)](https://app.circleci.com/pipelines/github/EdgePetrol/circle_ci)
-![EdgePetrol](https://img.shields.io/endpoint?url=https://edgepetrol.github.io/coverage/circle_ci/master/shield-coverage.json)
+![EdgePetrol](https://github.com/EdgePetrol/coverage/blob/master/circle_ci/master/badge.svg)
 ![Gem](https://img.shields.io/gem/v/circle_ci_wrapper)
 
 # circle_ci_wrapper
